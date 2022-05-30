@@ -59,7 +59,7 @@ function areaOfaCircle(r) {
     const area  = pi * (r ** 2) ;
     return area;
 }
-console.log("The area of a circle with radius 9 is", (areaOfaCircle(9)).toFixed(2) + "cm" );
+console.log("The area of a circle with radius 9cm is", (areaOfaCircle(9)).toFixed(2) + "cm'2" );
 
 //answer to question nine
 function simpleInterest(principal, rate, time) {
