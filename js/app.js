@@ -41,7 +41,7 @@ function generalQuadraticFormula(a,b,c) {
     var discriminant = Math.pow(b, 2) - 4 * a * c ;
     let x1 = (-1 * b + Math.sqrt(discriminant)) / 2 * a ;
     let x2 = (-1 * b - Math.sqrt(discriminant)) / 2 * a ;
-    return x1 + "and " + x2 ;
+    return x1.toFixed(2) + " and " + x2.toFixed(2) ;
 }
 console.log(generalQuadraticFormula(1, 1, -1));
 
@@ -59,14 +59,14 @@ function areaOfaCircle(r) {
     const area  = pi * (r ** 2) ;
     return area;
 }
-console.log("The area of a circle with radius 9 is", (areaOfaCircle(9)));
+console.log("The area of a circle with radius 9 is", (areaOfaCircle(9)).toFixed(2) + "cm" );
 
 //answer to question nine
 function simpleInterest(principal, rate, time) {
     var interest = (principal * rate * time)/100 ;
     return interest;
 }
-console.log("The principal of 8200 will yield to an interest of", (simpleInterest(8200,0.175,2.5)));
+console.log("The principal of 8200 will yield to an interest of", (simpleInterest(8200,0.175,2.5)).toFixed(2));
 
 //answer to question ten
 let u = 10%4;
@@ -84,7 +84,7 @@ function comparebmi(testdata){
 
     let merithigherBMI = bmi1 > bmi2;
 
-    let result = testdata[0][2] + "'s BMI is " + bmi1.toFixed(2)  + " and " + testdata[1][2] + "'s BMI is " + bmi2.toFixed(2)  + ". Hence " + testdata[0][2] + " having a higher BMI is " + merithigherBMI + "." 
+    let result = testdata[0][2] + "'s BMI is " + bmi1.toFixed(2)  + " and " + testdata[1][2] + "'s BMI is " + bmi2.toFixed(2)  + ". Hence " + " the assumption of " + testdata[0][2] + " having a higher BMI is " + merithigherBMI + "." 
 
     return result;
 }
